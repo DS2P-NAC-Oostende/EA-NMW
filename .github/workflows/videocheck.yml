@@ -36,7 +36,7 @@ jobs:
             if [ -n "$nr" ]; then
               gh issue comment "$nr" --body-file videocheck-rapport.md
             else
-              gh issue create --title "$titel" --body-file videocheck-rapport.md --assignee "${{ github.repository_owner }}"
+              gh issue create --title "$titel" --body-file videocheck-rapport.md --assignee "DS2P-NAC"
             fi
           elif [ -n "$nr" ]; then
             gh issue close "$nr" --comment "Alle video's werken weer. Automatisch gesloten door de videocheck."

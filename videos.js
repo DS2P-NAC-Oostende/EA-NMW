@@ -1,28 +1,19 @@
-// ===== CATEGORIEËN =====
-// Volgorde hier = volgorde van de knoppen.
-// id: intern, niet zichtbaar. naam: wat de leerling ziet.
+// ===== TERUGVALLIJST =====
+// Normaal haalt data.js de video's uit de Google Sheet "NMW – videolijst".
+// Lukt dat niet (geen internet, Sheet onbereikbaar), dan gebruikt de app deze lijst.
+// Houd hem gelijk aan de Sheet, anders zie je zonder verbinding een oude lijst.
+
 const categorieen = [
-    { id: "intro", naam: "MDR Introductie" },
-    { id: "contact", naam: "Contactmijnen" },
-    { id: "invloed", naam: "Invloedsmijnen" }
+    { id: "mdr-introductie", naam: "MDR Introductie" },
+    { id: "contactmijnen",   naam: "Contactmijnen", fr: "Mines de contact" },
+    { id: "invloedsmijnen",  naam: "Invloedsmijnen", fr: "Mines d'influence" }
 ];
 
-// ===== VIDEO'S =====
-// id: het deel na "v=" in de YouTube-link
-// titel: wat de leerling ziet
-// categorie: een id uit de lijst hierboven
 const videos = [
-
-    //@MDR INTRODUCTIE
-    { id: "ie9zJ9sSdFc", titel: "MDR Introfilm FR", categorie: "intro" },
-
-    //@CONTACTMIJNEN
-    { id: "sPdkjUi8aUY", titel: "Mines terrestres (Grondmijnen) FR", categorie: "contact" },
-    { id: "VXo-F4G7Ais", titel: "Mines flottantes (Drijvende mijnen) FR", categorie: "contact" },
-    { id: "TcZv4BSV5vk", titel: "Mines ancrées (Verankerde mijnen) FR", categorie: "contact" },
-    { id: "5fQvyYfCIgA", titel: "Mines d'entraînement (Oefenmijnen) FR", categorie: "contact" },
-
-    //@INVLOEDSMIJNEN
-    { id: "TR8JqrFMIp4", titel: "Mine aérienne - Différentes mines d'influence FR", categorie: "invloed" }
-
+    { id: "ie9zJ9sSdFc", titel: "MDR Introfilm", categorie: "mdr-introductie" },
+    { id: "sPdkjUi8aUY", titel: "Grondmijnen", fr: "Mines terrestres", categorie: "contactmijnen" },
+    { id: "VXo-F4G7Ais", titel: "Drijvende mijnen", fr: "Mines flottantes", categorie: "contactmijnen" },
+    { id: "TcZv4BSV5vk", titel: "Verankerde mijnen", fr: "Mines ancrées", categorie: "contactmijnen" },
+    { id: "5fQvyYfCIgA", titel: "Oefenmijnen", fr: "Mines d'entraînement", categorie: "contactmijnen" },
+    { id: "TR8JqrFMIp4", titel: "Mine aérienne - Différentes mines d'influence", categorie: "invloedsmijnen" }
 ];

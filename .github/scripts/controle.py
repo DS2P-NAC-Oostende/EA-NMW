@@ -81,7 +81,7 @@ def check_pwa():
             if waarde is None:
                 fouten.append(f"`{p}` mist `{veld}` (moet `{pad}` zijn, anders botst de app met je andere apps)")
             elif waarde == "/":
-                fouten.append(f"`{p}`: `{veld}` is `/` en claimt al je apps op ron78nl.github.io. Gebruik `{pad}`")
+                fouten.append(f"`{p}`: `{veld}` is `/` en claimt al je apps op ds2p-nac-oostende.github.io. Gebruik `{pad}`")
             elif waarde.lower() != pad.lower() and not waarde.startswith("./"):
                 waarschuwingen.append(f"`{p}`: `{veld}` is `{waarde}`, verwacht `{pad}`")
         if not m.get("short_name"):

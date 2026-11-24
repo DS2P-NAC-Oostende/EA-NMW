@@ -1,9 +1,9 @@
 {
-  "id": "/NMW/",
+  "id": "/EA-NMW/",
   "name": "EA NMW",
   "short_name": "NMW",
-  "start_url": "/NMW/",
-  "scope": "/NMW/",
+  "start_url": "/EA-NMW/",
+  "scope": "/EA-NMW/",
   "display": "standalone",
   "background_color": "#e6f2ff",
   "theme_color": "#2563eb",

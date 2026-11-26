@@ -16,7 +16,7 @@
 // zichzelf. Dat is de garantie.
 // =============================================================
 
-const VERSIE = "start";            // ROBOT-VERSIE (niet met de hand wijzigen)
+const VERSIE = "2026-11-26-1134-8d653d1";            // ROBOT-VERSIE (niet met de hand wijzigen)
 const PREFIX = "nmw-";         // eigen opslag: alle apps op dit adres delen een opslag
 const CACHE = PREFIX + VERSIE;
 
